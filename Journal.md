@@ -69,3 +69,52 @@ Plan the wiring layout for both the drone and the transmitter.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+**Day 2**: July 28, 2026
+
+
+Time spent: **4 hours**
+
+
+**What I worked on**
+
+Today I finalized the overall architecture and hardware selection for both my custom quadcopter drone and the custom handheld controller. After researching different options, I selected the major components that best matched my project goals and created a complete system plan before beginning the CAD stage.
+
+For the drone, I finalized the carbon fiber frame design approach, selected the SpeedyBee F405 V4 flight stack, iFlight XING-E Pro 2207 1800KV motors, Gemfan Hurricane 51433 propellers, the Tattu R-Line 6S battery, and the BN-880 GPS module with its built-in compass. I also confirmed that the drone will not include an FPV camera, allowing me to reduce weight and simplify the overall design.
+
+For the custom controller, I selected the ESP32-C3 Super Mini as the main microcontroller, the HC-12 wireless module for long-range communication, KY-023 joystick modules for control input, a rechargeable LiPo battery, and a TP4056 USB-C charging module. 
+
+
+**What I learned**
+
+Today I learned how the controller's charging circuit should be wired using the TP4056 module. The battery connects directly to the charging module, while the module powers the ESP32 through its output pins, allowing the controller to be recharged safely using USB-C.
+
+I also learned that adding electrolytic capacitors to the power system helps reduce voltage spikes and electrical noise, improving overall system reliability. In addition to the main low-ESR capacitor used on the drone, I decided to include a capacitor kit for future testing and filtering if needed.
+
+I gained a better understanding of how the complete drone and controller systems fit together, including the electrical connections, communication between components, and overall project layout.
+
+
+**Decisions made**
+
+Finalized the main hardware for both the drone and custom controller.
+
+Confirmed the drone will use a custom carbon fiber frame manufactured through PCBWay.
+
+Decided to use the ESP32-C3 Super Mini and HC-12 module for the custom controller.
+
+Finalized the power and charging layout for the handheld controller.
+
+Estimated the total project cost to be approximately **$400–500 CAD**, including electronics, batteries, shipping, and custom frame manufacturing.
+
+
+**Next steps**
+
+Begin designing the carbon fiber drone frame in CAD.
+
+Create the custom handheld controller enclosure.
+
+Build the complete wiring diagrams for both the drone and controller.
+
+
+<img width="838" height="601" alt="image" src="https://github.com/user-attachments/assets/02613f79-4e75-4b9f-90ce-186a90ccc83f" />
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
