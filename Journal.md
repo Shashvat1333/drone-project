@@ -172,3 +172,51 @@ Review the complete hardware list.
 <img width="1123" height="757" alt="image" src="https://github.com/user-attachments/assets/f3af8485-7e17-4bdf-942a-35cbce62da08" />
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+**Day 4**: July 30, 2026
+
+
+Time spent: **4 hours**
+
+
+**What I worked on**
+
+Today I finalized the frame material and dimensions for my drone, and fully mapped out how my custom LoRa-based transmitter/receiver system will handle both flight control and telemetry. I also worked out the mechanical details for mounting the modular arms and small components like the GPS and LoRa board, and finalized my parts list with pricing.
+
+I compared PLA+ against carbon fiber and PETG for the frame material, and after weighing flex, crash durability, and cost, settled on PETG as the frame material. I then worked through arm and base plate dimensions in CAD to make sure the frame would hold up to 6S motor torque without excessive flex.
+
+I also planned out how my DIYmalls ESP32 LoRa V3 (SX1262) boards will function as both the transmitter and receiver, handling stick control commands going to the drone and telemetry (like battery voltage) coming back from it over the same radio link.
+
+
+**What I learned**
+
+I learned that 3D-printed plastic frames, even in tougher filaments, flex more than CNC-cut carbon fiber under high motor torque, which can cause gyro vibration issues and reduce crash durability. I looked into carbon fiber CNC/waterjet cutting services (SendCutSend, CNC Madness, uMake) as an alternative but decided the cost and complexity weren't worth it compared to a properly reinforced PETG frame.
+
+I learned that the SX1262 chip is a half-duplex transceiver, meaning a single LoRa module on each end (drone and controller) can send control commands and receive telemetry using the same radio, rather than needing separate transmit/receive hardware.
+
+I learned that since I'm using the SpeedyBee F405 V4 stack, the flight controller already has a built-in voltage sensor — so I don't need to build my own voltage divider circuit. Instead, I just need to route that data out over a UART serial connection to my ESP32 LoRa board, using two wires (one for outgoing control data, one for incoming telemetry).
+
+I learned that a low-ESR capacitor (35V/1000uF) is still needed on the main battery power pads to protect against voltage spikes from the motors/ESC, separate from the LoRa board's power supply.
+
+I learned that heavy-duty foam tape works as a practical, simpler alternative to a custom 3D-printed mount for small components like the GPS module and LoRa board, since foam is viscoelastic and absorbs high-frequency motor vibration effectively, unlike thin electrical tape.
+
+I learned that for attaching modular, separately-printed arms to the frame, M3 brass heat-set inserts paired with steel bolts are more reliable than standard nuts/bolts or nylon bolts, since they create a strong reusable threaded connection without loose hardware falling into the frame.
+
+
+**Decisions made**
+
+Decided on foam tape as the mounting method for the GPS module and LoRa board rather than a custom printed bracket.
+
+Decided on M3 x 5mm x 4mm brass heat-set inserts with steel M3 bolts for attaching modular arms.
+
+
+**Next steps**
+
+Finalize CAD design for the modular arms with brass insert mounting points built in.
+
+Design the enclosure/top plate with correct wall thickness and small vent holes for heat dissipation.
+
+
+<img width="440" height="312" alt="image" src="https://github.com/user-attachments/assets/802e6889-57c3-4058-825b-e380f908e8df" />
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
