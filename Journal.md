@@ -118,3 +118,57 @@ Build the complete wiring diagrams for both the drone and controller.
 <img width="838" height="601" alt="image" src="https://github.com/user-attachments/assets/02613f79-4e75-4b9f-90ce-186a90ccc83f" />
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+**Day 3**: July 29, 2026
+
+
+Time spent: **3 hours**
+
+
+**What I worked on**
+
+Today I continued planning my custom drone project by refining both the handheld controller and the drone frame design.
+
+For the controller, I decided to switch from using a separate ESP32 and radio module to the **Heltec WiFi LoRa 32 (SX1262)** development board. This combines the microcontroller and LoRa radio into a single board, making the controller more compact and reducing the amount of wiring required. I also finalized the controller's power system by selecting a 3.7V 320mAh LiPo battery with a 1.25mm JST connector, which plugs directly into the Heltec board and can be recharged through its built-in USB-C charging circuit.
+
+I also began designing the drone frame. While planning the frame, I considered switching from a custom carbon fiber frame to a PLA+ printed frame because it would be less expensive, faster to manufacture, and still meet my project's weight requirements.
+
+Finally, I reviewed the motor mounting system. I confirmed that the iFlight XING2 motors use M3 mounting screws and determined that, with 4mm-thick frame arms, 8mm M3 screws and 3.2mm mounting holes will provide the correct fit. I also planned the arm dimensions, deciding that the arms should be approximately 10–15mm wide to provide sufficient strength while keeping the frame lightweight. To mount the flight controller safely, I selected an M3 nylon standoff kit to isolate the electronics from the conductive frame.
+
+
+**What I learned**
+
+Today I learned that the Heltec WiFi LoRa 32 board simplifies the controller design by combining the ESP32 and LoRa radio onto a single board while also providing built-in USB-C battery charging.
+
+I also learned that the board's antenna can be carefully bent to fit inside the controller enclosure as long as it is bent with a smooth curve rather than a sharp crease.
+
+While working on the frame, I learned more about selecting the correct mounting hardware by matching the motor screw length to the frame thickness and ensuring the frame arms are wide enough to provide adequate strength without adding unnecessary weight.
+
+
+**Decisions made**
+
+Switched to the Heltec WiFi LoRa 32 (SX1262) for both the transmitter and receiver.
+
+Selected a 3.7V 320mAh LiPo battery to power the controller.
+
+Considered switching from a carbon fiber frame to a PLA+ printed frame.
+
+Confirmed the motor mounting hardware will use M3 × 8mm screws with 3.2mm mounting holes.
+
+Selected M3 nylon standoffs to mount the flight controller and ESC safely.
+
+
+**Next steps**
+
+Continue designing the drone frame in CAD.
+
+Finalize whether the frame will be manufactured from carbon fiber or PLA+.
+
+Design the custom handheld controller enclosure around the Heltec board.
+
+Review the complete hardware list.
+
+
+<img width="1123" height="757" alt="image" src="https://github.com/user-attachments/assets/f3af8485-7e17-4bdf-942a-35cbce62da08" />
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
