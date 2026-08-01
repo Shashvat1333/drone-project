@@ -220,3 +220,59 @@ Design the enclosure/top plate with correct wall thickness and small vent holes 
 <img width="440" height="312" alt="image" src="https://github.com/user-attachments/assets/802e6889-57c3-4058-825b-e380f908e8df" />
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+**Day 5**: July 31, 2026
+
+
+Time spent: **3 hours**
+
+
+**What I worked on**
+
+Today I made several major changes to my custom drone build by stepping back and reviewing the overall design. My main goal was to improve efficiency, increase flight time, and reduce the total project cost without sacrificing reliability. After comparing different components, I realized that some of my original hardware choices were designed more for high-performance racing than for the long-endurance drone I want to build.
+
+I updated several of the main components in my parts list. I switched from the **iFlight XING2 2207 1855KV** motors to the **iFlight XING-E Pro 2207 1800KV** motors because they are more efficient and provide smoother throttle response for cruising. I decided to keep the **SpeedyBee F405 V4 30×30 flight controller and ESC stack** since it already meets all of my project requirements and is compatible with the rest of my electronics.
+
+The biggest change I made was to the battery system. My original plan was to use a **Tattu R-Line 1550mAh 4S LiPo**, but after estimating the expected flight time, I realized it would only provide around 4–6 minutes of flight. Since my goal is to achieve at least 30 minutes of flight time, I switched to the **Flywoo Explorer Lionpack BAK P45D 21700 4S1P 4500mAh Li-ion battery**. This battery uses high-capacity 21700 Li-ion cells, which store much more energy than a traditional LiPo pack while still operating at the same 14.8V (4S) voltage and using the same XT60 connector. Because of this, I can use it with my existing electronics without needing any adapters or wiring changes. I also selected the **SkyRC B6Neo balance charger** so I can safely charge both Li-ion and LiPo batteries.
+
+I also continued designing the drone frame in CAD and reached approximately **50% completion**. During the design process, I finalized the dimensions of the drone arms, deciding on **7mm thickness and 10mm width** with internal infill to improve strength while minimizing unnecessary weight.
+
+Finally, I confirmed that my **Bambu A1 Mini** 3D printer and **Elegoo PETG** filament will work well together for manufacturing the frame. After reviewing the printer and material specifications, I determined that no hardware upgrades or modifications are needed before I begin printing.
+
+
+**What I learned**
+
+Today I learned that selecting components based on the overall mission of the drone is more important than simply choosing the highest-performance parts. Motors and batteries designed for racing are not always the best choice for long-endurance flight.
+
+I also learned that Li-ion batteries provide a much higher energy density than traditional LiPo batteries, making them a much better option for increasing flight time. Since the new battery uses the same voltage and connector as my original design, I can upgrade the battery without changing the rest of the electrical system.
+
+While continuing the CAD design, I learned more about balancing frame strength and weight. Increasing the arm thickness while using internal infill allows the frame to remain strong without making it unnecessarily heavy.
+
+I also confirmed that my printer and filament are already capable of producing the frame, allowing me to move into manufacturing without purchasing additional equipment.
+
+
+**Decisions made**
+
+Switched to the **iFlight XING-E Pro 2207 1800KV** motors for improved efficiency.
+
+Kept the **SpeedyBee F405 V4 30×30 flight controller and ESC stack**.
+
+Replaced the **Tattu R-Line 1550mAh 4S LiPo** with the **Flywoo Explorer Lionpack BAK P45D 21700 4S1P 4500mAh Li-ion battery**.
+
+Selected the **SkyRC B6Neo balance charger**.
+
+Finalized the drone arm dimensions as **7mm thick × 10mm wide** with internal infill.
+
+Confirmed that the **Bambu A1 Mini** printer and **Elegoo PETG** filament will be used to manufacture the frame.
+
+
+**Next steps**
+
+Continue designing the remaining sections of the drone frame in CAD.
+
+Continue refining the design based on the prototype before moving to final assembly.
+
+
+<img width="593" height="402" alt="image" src="https://github.com/user-attachments/assets/ca55ea8e-d262-4111-99bd-9256f730bad2" />
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
