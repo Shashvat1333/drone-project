@@ -276,3 +276,49 @@ Continue refining the design based on the prototype before moving to final assem
 <img width="593" height="402" alt="image" src="https://github.com/user-attachments/assets/ca55ea8e-d262-4111-99bd-9256f730bad2" />
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+**Day 6**: August 1, 2026
+
+
+Time spent: **2 hours 46 minutes**
+
+
+**What I worked on**
+
+Today I focused entirely on the CAD design of my drone project and made significant progress. I completed the design of the drone frame, bringing that portion of the project to completion. I also continued working on the custom handheld controller and brought its design close to completion.
+
+To better visualize how the final drone will be assembled, I created a complete CAD assembly of the frame and added proxy models of the M3 screws. Seeing all of the hardware assembled together allowed me to evaluate how the individual parts interact and how the finished drone will look once built.
+
+I also designed the landing legs for the frame, completing the structural layout and providing the drone with the necessary ground clearance for takeoff and landing.
+
+
+**What I learned**
+
+Today I learned that building a complete CAD assembly is an effective way to identify design issues that are difficult to notice when working on individual parts separately. By viewing the entire assembly with the mounting hardware installed, I was able to find and correct several clearance, alignment, and mounting issues before manufacturing.
+
+I also gained a better understanding of how small adjustments to individual components can improve the fit and overall assembly of the final drone.
+
+
+**Decisions made**
+
+Completed the CAD design of the drone frame.
+
+Added proxy M3 screws to create a complete assembly for design verification.
+
+Designed the landing legs for the frame.
+
+Corrected several clearance and alignment issues discovered during assembly.
+
+Continued refining the custom controller, bringing it close to completion.
+
+
+**Next steps**
+
+Finish the remaining controller CAD design.
+
+Perform a final review of the complete drone assembly before manufacturing.
+
+
+<img width="943" height="556" alt="image" src="https://github.com/user-attachments/assets/bb1dec53-7862-4401-9cbd-db6d3d007779" />
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
