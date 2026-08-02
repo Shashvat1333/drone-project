@@ -322,3 +322,52 @@ Perform a final review of the complete drone assembly before manufacturing.
 <img width="943" height="556" alt="image" src="https://github.com/user-attachments/assets/bb1dec53-7862-4401-9cbd-db6d3d007779" />
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+**Day 7**: August 2, 2026
+
+
+Time spent: **3 hours**
+
+
+**What I worked on**
+
+Today I finished the CAD design for my custom handheld controller, completing the mechanical design of both the drone and its controller. After finishing the individual parts, I created a complete CAD assembly of the controller to verify that everything fit together correctly before manufacturing.
+
+Building the full assembly allowed me to inspect the controller as a complete product rather than as separate components. During this process, I found a few missing parts that I had forgotten to include and noticed several small design issues that were not obvious while working on the individual models. After identifying these problems, I updated the design so the controller assembly was complete and ready for manufacturing.
+
+I also began creating the electrical wiring diagrams using Cirkit Designer. I completed the full wiring diagram for the drone, mapping the connections between the flight controller, 4-in-1 ESC, motors, GPS module, LoRa receiver, battery, and other electronics. Creating the wiring diagram helped verify that all of the required electrical connections had been accounted for before beginning the physical assembly.
+
+
+**What I learned**
+
+Today I learned that creating a complete CAD assembly is one of the best ways to verify a design before manufacturing. Viewing every component together made it much easier to identify missing parts, incorrect fits, and small design mistakes that were difficult to notice while designing individual components.
+
+I also learned that building the wiring diagram before assembling the electronics makes it much easier to understand the overall electrical system and identify any missing connections before soldering begins.
+
+
+**Decisions made**
+
+Completed the CAD design of the custom handheld controller.
+
+Created a complete controller assembly for design verification.
+
+Corrected several missing parts and minor design issues discovered during the assembly process.
+
+Completed the drone's wiring diagram using Cirkit Designer.
+
+Decided to perform one final review of the parts list before applying for funding and ordering the components.
+
+
+**Next steps**
+
+Complete the controller wiring diagram.
+
+Review the complete bill of materials one final time.
+
+Apply for project funding.
+
+Order the components and begin the manufacturing phase once funding is approved.
+
+<img width="667" height="441" alt="image" src="https://github.com/user-attachments/assets/9c9cfdc7-2ece-49cd-9658-10750085abae" />
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
