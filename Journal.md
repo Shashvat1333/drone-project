@@ -371,3 +371,15 @@ Order the components and begin the manufacturing phase once funding is approved.
 <img width="667" height="441" alt="image" src="https://github.com/user-attachments/assets/9c9cfdc7-2ece-49cd-9658-10750085abae" />
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+**Day 17**: August 3, 2026
+
+Time spent: **3 hours**
+
+Built out proxy parts for the drone assembly today, including the ESC, motors, propellers, and flight controller. Having accurate models instead of placeholder shapes made it much easier to see what the final product would actually look like when put together. Found several screw hole sizing issues throughout the frame, some too large and some too small for the actual hardware, and went through and fixed each one. Also ran into a specific problem with the FC and ESC stack: the screws I'd planned to use were too large to properly attach the 4-in-1 ESC and flight controller, so I'm switching to a smaller size from my M3 kit once funding comes through. Made a few structural changes too, adding material in some spots for stability and trimming it elsewhere to save weight.
+Next: order the smaller screws once funded, keep refining the frame, move toward finalizing before manufacturing.
+
+<img width="1784" height="773" alt="image" src="https://github.com/user-attachments/assets/36b0be59-9906-4ecb-97e2-a7e3b60bee9c" />
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
