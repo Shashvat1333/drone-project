@@ -372,7 +372,7 @@ Order the components and begin the manufacturing phase once funding is approved.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-**Day 17**: August 3, 2026
+**Day 8**: August 7, 2026
 
 Time spent: **3 hours**
 
