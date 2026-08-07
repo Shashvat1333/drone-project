@@ -383,3 +383,15 @@ Next: order the smaller screws once funded, keep refining the frame, move toward
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+**Day 9**: August 8, 2026
+
+Time spent: **3 hours**
+
+Made a big change to the battery setup today. Was originally planning to use the Flywoo Explorer Lionpack BAK P45D 4S1P 4500mAh pack, but switched to the Flywoo Explorer Molicel P30B 18650 6S1P 3000mAh instead to get better flight times and efficiency. Going from 4S to 6S bumps up the system voltage, which lets the motors spin more efficiently under load while pulling fewer amps for the same output, so better performance and endurance overall. Finished the full Bill of Materials today too, landing on just over $700 CAD for the complete build. Had to redo my wiring diagram in Cirkit after realizing I never saved the last version, but got through it and finished both the drone and controller diagrams. Also finished the demo video for the drone, spent some extra time making it look realistic by having two propellers spin clockwise and the other two counterclockwise to match how a real quadcopter actually flies. Did a full review of everything so far and didn't find any issues, so the design's in a solid finished state.
+Next: apply for funding, then move into printing custom parts and ordering the rest of the components.
+
+https://github.com/user-attachments/assets/ad44ab19-e9d0-4f68-9096-000306742742
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
