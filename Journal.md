@@ -372,7 +372,7 @@ Order the components and begin the manufacturing phase once funding is approved.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-**Day 8**: August 7, 2026
+**Day 8**: August 5, 2026
 
 Time spent: **3 hours**
 
@@ -383,7 +383,7 @@ Next: order the smaller screws once funded, keep refining the frame, move toward
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-**Day 9**: August 8, 2026
+**Day 9**: August 6, 2026
 
 Time spent: **3 hours**
 
