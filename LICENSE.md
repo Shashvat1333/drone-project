@@ -1,6 +1,8 @@
 LICENSE
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Software
+
+**Software**
+
 Applies to all code in this repository, including firmware, scripts, and control software.
 
 MIT License
@@ -24,8 +26,11 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Hardware
+
+**Hardware**
+
 Applies to all hardware design files in this repository, including CAD source files (Onshape/STEP), 3D printable files (STL), the custom carbon fiber/PETG frame design, the handheld transmitter enclosure design, wiring diagrams (Cirkit Designer), the BOM, and related documentation.
 
 MIT License
@@ -49,4 +54,5 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE HARDWARE OR THE USE OR OTHER DEALINGS IN THE
 HARDWARE, INCLUDING ANY PHYSICAL OBJECTS MANUFACTURED FROM IT.
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
