@@ -2,13 +2,13 @@
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Overview
--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 I am designing and building a **fully custom quadcopter drone and handheld transmitter** as a hardware engineering project. The goal of this project is to combine **mechanical design, electronics, 3D printing, and embedded systems** to create a long-endurance flying platform controlled by a radio system I built myself, rather than an off-the-shelf drone or transmitter.
 
 This project involves selecting and validating components for both the drone and controller, designing custom frames and enclosures in CAD, building a LoRa-based radio link for control and telemetry, wiring the full electrical systems, and preparing everything for manufacturing and assembly.
 
 ## Project Goals
--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 The main goals of this project are:
 - Build a quadcopter capable of 30+ minutes of flight time, prioritizing endurance over racing performance.
 - Design and manufacture a custom 3D-printed frame and handheld controller enclosure.
@@ -18,7 +18,7 @@ The main goals of this project are:
 - Create a documented engineering process from initial planning through final assembly.
 
 ## Technologies and Tools
--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 ### Mechanical Design
 - CAD modeling (frame, arms, landing legs, controller enclosure)
