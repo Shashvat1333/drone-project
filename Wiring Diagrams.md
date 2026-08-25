@@ -30,3 +30,24 @@ CONTROLLER
 <img width="756" height="545" alt="image" src="https://github.com/user-attachments/assets/3891e9ce-8518-4966-8ca0-d34253f10c69" />
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+| Component | Component Pin / Wire | LoRa Board Pin / Header | Function / Notes |
+|---|---|---|---|
+| LiPo Battery (3.7V) | Red (+) Wire | JST 1.25mm Connector (Bottom) | Main power supply via onboard connector |
+| LiPo Battery (3.7V) | Black (–) Wire | JST 1.25mm Connector (Bottom) | Ground reference via onboard connector |
+| Left Joystick (KY-023) | +5V / VCC | 3V3 (Shared power rail/splice) | Shared power input |
+| Left Joystick (KY-023) | GND | GND Port (Shared splice) | Shared ground reference |
+| Left Joystick (KY-023) | VRX (X-axis) | GPIO 3 (Top Row) | Analog X-axis signal |
+| Left Joystick (KY-023) | VRY (Y-axis) | GPIO 4 (Top Row) | Analog Y-axis signal |
+| Left Joystick (KY-023) | SW (Switch) | GPIO 5 (Top Row) | Joystick click button input |
+| Right Joystick (KY-023) | +5V / VCC | 3V3 (Shared power rail/splice) | Shared power input |
+| Right Joystick (KY-023) | GND | GND Port (Shared splice) | Shared ground reference |
+| Right Joystick (KY-023) | VRX (X-axis) | GPIO 6 (Top Row) | Analog X-axis signal |
+| Right Joystick (KY-023) | VRY (Y-axis) | GPIO 7 (Top Row) | Analog Y-axis signal |
+| Right Joystick (KY-023) | SW (Switch) | GPIO 1 (Top Row) | Joystick click button input |
+| Left Push Button | Pin 1 | GPIO 2 (Top Row) | Digital input for custom action button |
+| Left Push Button | Pin 2 | GND (Shared ground splice) | Pulls pin LOW when pressed |
+| Right Push Button | Pin 1 | GPIO 38 (Top Row) | Digital input for custom action button |
+| Right Push Button | Pin 2 | GND (Shared ground splice) | Pulls pin LOW when pressed |
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
