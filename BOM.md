@@ -20,5 +20,5 @@ Drone Build - Parts List
 
 **Import Fees: ~$20**
 
-**Total: $735.03**
+**Total: $593.60**
 
