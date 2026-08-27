@@ -3,7 +3,7 @@ Drone Build - Parts List
 | # | Part | Price (w/ tax) | Link |
 |---|------|-----------------|------|
 | 1 | XING-E Pro 2207 1800KV Brushless Motor (4-Pack) | $92.65 | [Amazon](https://www.amazon.ca/1800KV-Brushless-5-6inch-Propeller-Freestyle/dp/B0D791YFCC) |
-| 2 | SpeedyBee F405 V4 FC & 55A 4-in-1 ESC Stack | $184.66 | [Amazon](https://www.amazon.ca/SpeedyBee-ICM42688P-Controller-BLHELIS-Freestyle/dp/B0DSW7TCYV) |
+| 2 | SpeedyBee F405 V4 FC & 55A 4-in-1 ESC Stack | $115.6 | [AliExpress](https://www.aliexpress.com/item/1005012137897324.html) |
 | 3 | HQProp 5X4.3X3 V2S 3-Blade Propellers (8-Pack) | $22.61 | [Amazon](https://www.amazon.ca/HQProp-5X4-3X3-3-Blade-Propellers-Carbonate/dp/B0CTY2VNQS) |
 | 4 | Flywoo Explorer Molicell P30B 6S1P 3000mAh Battery | $86 | [EpicFPV](https://epicfpv.ca/products/flywoo-explorer-molicell-p30b-18650-6s1p-3000mah-lionpack-battery?variant=50460669804830) |
 | 5 | BN-880 GNSS Dual GPS Module with QMC5883L Compass | $24.98 | [Amazon](https://www.amazon.ca/Juinrinet-QMC5883L-Compass-PIX-Hawk-Controllers/dp/B0GX14S2W9) |
