@@ -11,7 +11,7 @@ Drone Build - Parts List
 | 7 | EEMB 3.7V LiPo Battery 320mAh (JST 1.25mm) | $16.94 | [Amazon](https://www.amazon.ca/EEMB-402535-Rechargeable-Connector-Certified/dp/B08215N9R8) |
 | 8 | DIYmalls 915MHz LoRa ESP32 OLED Board V3 (2-Pack) | $66.53 | [Amazon](https://www.amazon.ca/DIYmalls-Antenna-Arduino-LoRawan-Compatible/dp/B09VDJJTDB) |
 | 9 | uxcell Mini Tactile Push Button Switch (6-Pack) | $7.67 | [Amazon](https://www.amazon.ca/uxcell%C2%AE-4-5x4-5x3-8mm-Momentary-Tactile-Button/dp/B07HCFVHXM) |
-| 10 | Teskyer Double Sided Tape 16.4ft | $13.54 | [Amazon](https://www.amazon.ca/dp/B096WYFQM8) |
+| 10 | Nano Double Sided Adhesive Tape | $8.1 | [AliExpress](https://www.aliexpress.com/item/1005010585928501.html) |
 | 11 | KADRICK 420PCS M3 Heat Set Inserts Kit | $25.48 | [Amazon](https://www.amazon.com/Threaded-Assortment-M3x6-30mm-Installation-Printing/dp/B0GYRQG7F2) |
 | 12 | SKYRC B6Neo Balance Charger/Discharger | $86.70 | [Amazon](https://www.amazon.ca/SKYRC-B6Neo-Balance-Battery-Discharger/dp/B0CCT2WGNS) |
 | 13 | ELEGOO PETG Filament 1.75mm Black 1KG | $23.72 | [Amazon](https://www.amazon.ca/ELEGOO-Filament-Dimensional-Accuracy-Printers/dp/B0D41Y3WWZ) |
