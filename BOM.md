@@ -13,7 +13,7 @@ Drone Build - Parts List
 | 9 | uxcell Mini Tactile Push Button Switch (6-Pack) | $7.67 | [Amazon](https://www.amazon.ca/uxcell%C2%AE-4-5x4-5x3-8mm-Momentary-Tactile-Button/dp/B07HCFVHXM) |
 | 10 | Nano Double Sided Adhesive Tape | $8.1 | [AliExpress](https://www.aliexpress.com/item/1005010585928501.html) |
 | 11 | KADRICK 420PCS M3 Heat Set Inserts Kit | $25.48 | [Amazon](https://www.amazon.com/Threaded-Assortment-M3x6-30mm-Installation-Printing/dp/B0GYRQG7F2) |
-| 12 | SKYRC B6Neo Balance Charger/Discharger | $86.70 | [Amazon](https://www.amazon.ca/SKYRC-B6Neo-Balance-Battery-Discharger/dp/B0CCT2WGNS) |
+| 12 | LiPo Charger 80W 6A RC Fast Balance Battery Chargers Discharger | $49.72| [Amazon](https://www.amazon.ca/dp/B0G9MDKCW3/ref=sspa_dk_detail_0) |
 | 13 | ELEGOO PETG Filament 1.75mm Black 1KG | $23.72 | [Amazon](https://www.amazon.ca/ELEGOO-Filament-Dimensional-Accuracy-Printers/dp/B0D41Y3WWZ) |
 | 14 | Gemfan Magic Tie Down Battery Straps | $10.34 | [Amazon](https://www.amazon.ca/Gemfan-Strength-Battery-Straps-25X1-6CM/dp/B09C1XKXY5) |
 | 15 | TOWOT 63/37 Rosin Core Solder Wire 1.0mm 50g | $14.69 | [Amazon](https://www.amazon.ca/TOWOT-Purity-Electrical-Soldering-Content/dp/B09KM2LW4G) |
