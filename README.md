@@ -41,3 +41,4 @@ The main goals of this project are:
 - JOURNAL.md — full day-by-day build log with decisions and lessons learned
 
 
+<img width="1784" height="773" alt="image" src="https://github.com/user-attachments/assets/7fb53470-5427-4511-a9d5-9a98a5afb5a7" />
