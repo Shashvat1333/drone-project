@@ -7,7 +7,7 @@ Drone Build - Parts List
 | 3 | 4pair IFlight Nazgul F5 5.1x3.5x3 | $10.1 | [AliExpress](https://www.aliexpress.com/item/1005004330581935.html) |
 | 4 | Flywoo Explorer Molicell P30B 6S1P 3000mAh Battery | $86 | [EpicFPV](https://epicfpv.ca/products/flywoo-explorer-molicell-p30b-18650-6s1p-3000mah-lionpack-battery?variant=50460669804830) |
 | 5 | BN-880 GNSS Dual GPS Module with QMC5883L Compass | $35.5 | [AliExpress](https://www.aliexpress.com/item/1005009797132645.html) |
-| 6 | KY-023 Dual-Axis Joystick Module (x2) | $7.86 | [Amazon](https://www.amazon.ca/KY-023-Dual-axis-Joystick-Controller-Module/dp/B0GJJ3FTJF) |
+| 6 | KY-023 Dual-Axis Joystick Module (x2) | $5.3 | [AliExpress](https://www.aliexpress.com/item/1005012510260347.html) |
 | 7 | EEMB 3.7V LiPo Battery 320mAh (JST 1.25mm) | $16.94 | [Amazon](https://www.amazon.ca/EEMB-402535-Rechargeable-Connector-Certified/dp/B08215N9R8) |
 | 8 | DIYmalls 915MHz LoRa ESP32 OLED Board V3 (2-Pack) | $66.53 | [Amazon](https://www.amazon.ca/DIYmalls-Antenna-Arduino-LoRawan-Compatible/dp/B09VDJJTDB) |
 | 9 | uxcell Mini Tactile Push Button Switch (6-Pack) | $7.67 | [Amazon](https://www.amazon.ca/uxcell%C2%AE-4-5x4-5x3-8mm-Momentary-Tactile-Button/dp/B07HCFVHXM) |
