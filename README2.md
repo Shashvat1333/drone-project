@@ -1,10 +1,10 @@
 # Drone Project
 
-A fully custom quadcopter drone and handheld transmitter, built from scratch with a self-designed LoRa radio link instead of an off-the-shelf RC system.
+A fully custom quadcopter drone and handheld transmitter, designed from scratch with a self-designed LoRa radio link instead of an off-the-shelf RC system.
 
 ![Drone Render](https://github.com/user-attachments/assets/7fb53470-5427-4511-a9d5-9a98a5afb5a7)
 
-> **Project Status:** Mechanical design (CAD) and wiring documentation are complete. Firmware is actively being developed but has not yet been tested, since testing requires physical hardware that is pending funding approval.
+> **Project Status:** Mechanical design (CAD) and wiring documentation are complete. Firmware is actively being developed but has not yet been tested. Physical assembly, printing, and flight testing are pending funding approval.
 
 ## Table of Contents
 - [Overview](#overview)
@@ -18,9 +18,9 @@ A fully custom quadcopter drone and handheld transmitter, built from scratch wit
 
 ## Overview
 
-I am designing and building a fully custom quadcopter drone and handheld transmitter as a hardware engineering project. The goal is to combine mechanical design, electronics, 3D printing, and embedded systems to create a long-endurance flying platform controlled by a radio system I built myself, rather than an off-the-shelf drone or transmitter.
+I am designing a fully custom quadcopter drone and handheld transmitter as a hardware engineering project. The goal is to combine mechanical design, electronics, 3D printing, and embedded systems to create a long-endurance flying platform controlled by a radio system I built myself, rather than an off-the-shelf drone or transmitter.
 
-This project involves selecting and validating components for both the drone and controller, designing custom frames and enclosures in CAD, building a LoRa-based radio link for control and telemetry, wiring the full electrical systems, and preparing everything for manufacturing and assembly.
+This project involves selecting and validating components for both the drone and controller, designing custom frames and enclosures in CAD, developing a LoRa-based radio link for control and telemetry, and documenting the full electrical wiring in preparation for manufacturing and assembly.
 
 ### Project Goals
 
@@ -35,7 +35,7 @@ This project involves selecting and validating components for both the drone and
 
 **Mechanical Design**
 - CAD modeling (frame, arms, landing legs, controller enclosure)
-- 3D printing — PETG filament (Bambu A1 Mini)
+- 3D printing — planned in PETG filament (Bambu A1 Mini)
 
 **Electronics**
 - SpeedyBee F405 V4 flight controller / 4-in-1 ESC stack
@@ -47,7 +47,7 @@ This project involves selecting and validating components for both the drone and
 
 **Programming / Firmware**
 - Embedded C++ (Arduino framework, ESP32/LoRa) — in development
-- Flight controller firmware configuration (iNav-compatible)
+- Flight controller firmware configuration (iNav-compatible) — planned
 
 ---
 
@@ -67,11 +67,11 @@ drone-project/
 
 ## CAD Model & Assembly
 
-The drone frame, arms, landing legs, and handheld controller enclosure were all custom-designed in CAD, with dimensions driven by the physical footprint of the SpeedyBee stack, motors, and battery pack. Parts were printed in PETG for a balance of strength and heat resistance around the motor mounts.
+The drone frame, arms, landing legs, and handheld controller enclosure have been custom-designed in CAD, with dimensions driven by the physical footprint of the SpeedyBee stack, motors, and battery pack. Parts are designed to be printed in PETG for a balance of strength and heat resistance around the motor mounts.
 
-All production-ready parts and full assemblies are stored in the [CAD](https://github.com/Shashvat1333/drone-project/tree/main/CAD) folder as `.step` files.
+All production-ready parts and full assemblies are stored in the [CAD](https://github.com/Shashvat1333/drone-project/tree/main/CAD) folder as `.step` files, ready for printing once funding is approved.
 
-**Build demo:**
+**CAD walkthrough:**
 
 https://github.com/user-attachments/assets/ad44ab19-e9d0-4f68-9096-000306742742
 
@@ -81,7 +81,7 @@ https://github.com/user-attachments/assets/ad44ab19-e9d0-4f68-9096-000306742742
 
 The drone side connects the flight controller to the ESC stack, motors, GPS/compass module, and the LoRa telemetry radio. The controller side connects a second LoRa radio to dual joysticks and push buttons for manual flight input.
 
-Full pin-by-pin wiring specifications for both the drone and the handheld controller are documented in [Wiring Diagrams.md](Wiring%20Diagrams.md).
+Full pin-by-pin wiring specifications for both the drone and the handheld controller are documented in [Wiring Diagrams.md](Wiring%20Diagrams.md). These layouts are finalized and ready to be wired once the hardware is on hand.
 
 ### Drone Wiring
 
@@ -126,13 +126,13 @@ Full pin-by-pin wiring specifications for both the drone and the handheld contro
 
 ## Firmware
 
-**Status: In development — not yet written/tested.**
+**Status: In development — not yet written or tested.**
 
 The flight controller will run iNav-compatible firmware, configured (not custom-coded) for stabilization, GPS Return-to-Home, and ESC/motor output.
 
 The LoRa radio link between the drone and the handheld controller requires fully custom firmware, to be written in embedded C++ using the Arduino framework. It will read joystick and button input on the controller side, transmit it over LoRa, and the drone-side ESP32 will relay it into the flight controller as RC/telemetry data.
 
-Firmware development is on hold pending funding for the physical hardware — I don't want to publish untested code as if it's been verified against real boards.
+Firmware development is on hold pending funding for the physical hardware — untested code isn't being published as if it's verified against real boards.
 
 - **Boards to be used:** DIYmalls ESP32 LoRa V3 (SX1262) — drone side; Heltec WiFi LoRa 32 (SX1262) — controller side
 - **Flight controller:** SpeedyBee F405 V4, to be configured via iNav
@@ -141,14 +141,14 @@ Firmware development is on hold pending funding for the physical hardware — I 
 
 ## Getting Started
 
-To build and run this project yourself:
+Planned build process once hardware is available:
 
-1. **Print the parts** — Slice the `.step` files from the [CAD](https://github.com/Shashvat1333/drone-project/tree/main/CAD) folder (built and tested in PETG).
-2. **Assemble the frame** — Mount the motors, ESC stack, flight controller, GPS module, and battery according to the CAD model.
-3. **Wire the electronics** — Follow [Wiring Diagrams.md](Wiring%20Diagrams.md) for both the drone and controller wiring.
+1. **Print the parts** — *(Pending)* Slice the `.step` files from the [CAD](https://github.com/Shashvat1333/drone-project/tree/main/CAD) folder. Designed for PETG.
+2. **Assemble the frame** — *(Pending)* Mount the motors, ESC stack, flight controller, GPS module, and battery according to the CAD model.
+3. **Wire the electronics** — *(Pending)* Follow [Wiring Diagrams.md](Wiring%20Diagrams.md) for both the drone and controller wiring.
 4. **Flash the firmware** — *(Pending)* Custom LoRa transmitter/receiver firmware is still in development. Once written, it will be uploaded to both the drone-side and controller-side ESP32 boards via the Arduino IDE.
-5. **Configure the flight controller** — Load iNav-compatible firmware onto the SpeedyBee F405 V4 and configure PID tuning, GPS, and Return-to-Home settings.
-6. **Test and fly** — *(Pending hardware/funding)* Once assembled, confirm the LoRa link is transmitting and test flight in a safe, open area.
+5. **Configure the flight controller** — *(Pending)* Load iNav-compatible firmware onto the SpeedyBee F405 V4 and configure PID tuning, GPS, and Return-to-Home settings.
+6. **Test and fly** — *(Pending)* Confirm the LoRa link is transmitting and test flight in a safe, open area.
 
 ---
 
