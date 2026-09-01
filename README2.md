@@ -129,7 +129,7 @@ The flight controller runs iNav-compatible firmware, configured (not custom-code
 
 The LoRa radio link between the drone and the handheld controller is fully custom, written in embedded C++ using the Arduino framework. It reads joystick and button input on the controller side, transmits it over LoRa, and the drone-side ESP32 relays it into the flight controller as RC/telemetry data.
 
-- **Source code:** [Firmware](https://github.com/Shashvat1333/drone-project/tree/main/Firmware)
+- **Source code:** [Firmware](https://github.com/Shashvat1333/drone-project/tree/)
 - **Boards used:** DIYmalls ESP32 LoRa V3 (SX1262) — drone side; Heltec WiFi LoRa 32 (SX1262) — controller side
 - **Flight controller:** SpeedyBee F405 V4, configured via iNav
 
@@ -142,7 +142,7 @@ To build and run this project yourself:
 1. **Print the parts** — Slice the `.step` files from the [CAD](https://github.com/Shashvat1333/drone-project/tree/main/CAD) folder (built and tested in PETG).
 2. **Assemble the frame** — Mount the motors, ESC stack, flight controller, GPS module, and battery according to the CAD model.
 3. **Wire the electronics** — Follow [Wiring Diagrams.md](Wiring%20Diagrams.md) for both the drone and controller wiring.
-4. **Flash the firmware** — Upload the custom LoRa firmware to both the drone-side and controller-side ESP32 boards from the [Firmware](https://github.com/Shashvat1333/drone-project/tree/main/Firmware) folder using the Arduino IDE.
+4. **Flash the firmware** — Upload the custom LoRa firmware to both the drone-side and controller-side ESP32 boards from the [Firmware](https://github.com/Shashvat1333/drone-project/tree/) folder using the Arduino IDE.
 5. **Configure the flight controller** — Load iNav-compatible firmware onto the SpeedyBee F405 V4 and configure PID tuning, GPS, and Return-to-Home settings.
 6. **Test and fly** — Power on the drone and controller, confirm the LoRa link is transmitting, and test flight in a safe, open area.
 
