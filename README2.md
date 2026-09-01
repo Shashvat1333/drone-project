@@ -4,6 +4,8 @@ A fully custom quadcopter drone and handheld transmitter, built from scratch wit
 
 ![Drone Render](https://github.com/user-attachments/assets/7fb53470-5427-4511-a9d5-9a98a5afb5a7)
 
+> **Project Status:** Mechanical design (CAD) and wiring documentation are complete. Firmware is actively being developed but has not yet been tested, since testing requires physical hardware that is pending funding approval.
+
 ## Table of Contents
 - [Overview](#overview)
 - [Repository Structure](#repository-structure)
@@ -44,7 +46,7 @@ This project involves selecting and validating components for both the drone and
 - 6S1P Li-ion battery pack (Flywoo Explorer Molicel P30B 18650)
 
 **Programming / Firmware**
-- Embedded C++ (Arduino framework, ESP32/LoRa)
+- Embedded C++ (Arduino framework, ESP32/LoRa) — in development
 - Flight controller firmware configuration (iNav-compatible)
 
 ---
@@ -53,7 +55,6 @@ This project involves selecting and validating components for both the drone and
 ```
 drone-project/
 ├── CAD/ # .step files for drone frame, arms, controller enclosure
-├── Firmware/ # Custom ESP32 LoRa transmitter/receiver firmware
 ├── Wiring Diagrams.md # Full wiring reference (drone + controller)
 ├── Images & Demo/ # Renders, build photos, flight test video
 ├── BOM.md # Full bill of materials
@@ -125,13 +126,16 @@ Full pin-by-pin wiring specifications for both the drone and the handheld contro
 
 ## Firmware
 
-The flight controller runs iNav-compatible firmware, configured (not custom-coded) for stabilization, GPS Return-to-Home, and ESC/motor output.
+**Status: In development — not yet written/tested.**
 
-The LoRa radio link between the drone and the handheld controller is fully custom, written in embedded C++ using the Arduino framework. It reads joystick and button input on the controller side, transmits it over LoRa, and the drone-side ESP32 relays it into the flight controller as RC/telemetry data.
+The flight controller will run iNav-compatible firmware, configured (not custom-coded) for stabilization, GPS Return-to-Home, and ESC/motor output.
 
-- **Source code:** [Firmware](https://github.com/Shashvat1333/drone-project/tree/main/FIRMWARE)
-- **Boards used:** DIYmalls ESP32 LoRa V3 (SX1262) — drone side; Heltec WiFi LoRa 32 (SX1262) — controller side
-- **Flight controller:** SpeedyBee F405 V4, configured via iNav
+The LoRa radio link between the drone and the handheld controller requires fully custom firmware, to be written in embedded C++ using the Arduino framework. It will read joystick and button input on the controller side, transmit it over LoRa, and the drone-side ESP32 will relay it into the flight controller as RC/telemetry data.
+
+Firmware development is on hold pending funding for the physical hardware — I don't want to publish untested code as if it's been verified against real boards.
+
+- **Boards to be used:** DIYmalls ESP32 LoRa V3 (SX1262) — drone side; Heltec WiFi LoRa 32 (SX1262) — controller side
+- **Flight controller:** SpeedyBee F405 V4, to be configured via iNav
 
 ---
 
@@ -142,9 +146,9 @@ To build and run this project yourself:
 1. **Print the parts** — Slice the `.step` files from the [CAD](https://github.com/Shashvat1333/drone-project/tree/main/CAD) folder (built and tested in PETG).
 2. **Assemble the frame** — Mount the motors, ESC stack, flight controller, GPS module, and battery according to the CAD model.
 3. **Wire the electronics** — Follow [Wiring Diagrams.md](Wiring%20Diagrams.md) for both the drone and controller wiring.
-4. **Flash the firmware** — Upload the custom LoRa firmware to both the drone-side and controller-side ESP32 boards from the [Firmware](https://github.com/Shashvat1333/drone-project/tree/main/FIRMWARE) folder using the Arduino IDE.
+4. **Flash the firmware** — *(Pending)* Custom LoRa transmitter/receiver firmware is still in development. Once written, it will be uploaded to both the drone-side and controller-side ESP32 boards via the Arduino IDE.
 5. **Configure the flight controller** — Load iNav-compatible firmware onto the SpeedyBee F405 V4 and configure PID tuning, GPS, and Return-to-Home settings.
-6. **Test and fly** — Power on the drone and controller, confirm the LoRa link is transmitting, and test flight in a safe, open area.
+6. **Test and fly** — *(Pending hardware/funding)* Once assembled, confirm the LoRa link is transmitting and test flight in a safe, open area.
 
 ---
 
