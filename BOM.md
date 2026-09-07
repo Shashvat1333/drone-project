@@ -17,8 +17,9 @@ Drone Build - Parts List
 | 13 | ELEGOO PETG Filament 1.75mm Black 1KG ~ 178.77g Used | $23.72 | [Amazon](https://www.amazon.ca/ELEGOO-Filament-Dimensional-Accuracy-Printers/dp/B0D41Y3WWZ) |
 | 14 | GEPRC Battery Strap Good Wear Resistance High Tensile Strength | $15.6 | [AliExpress](https://www.aliexpress.com/item/1005008139076466.html) |
 | 15 | TOWOT 63/37 Rosin Core Solder Wire 1.0mm 50g | $14.69 | [Amazon](https://www.amazon.ca/TOWOT-Purity-Electrical-Soldering-Content/dp/B09KM2LW4G) |
+| 16 | Eujgoov Smoke Stopper Fuse | $14.1 | [Amazon](https://www.amazon.ca/dp/B0C8TYSR72/ref=sspa_dk_detail_0?) |
 
 **Import Fees: ~$20**
 
-**Total: $593.60**
+**Total: $607.70**
 
