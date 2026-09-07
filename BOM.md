@@ -18,8 +18,9 @@ Drone Build - Parts List
 | 14 | GEPRC Battery Strap Good Wear Resistance High Tensile Strength | $15.6 | [AliExpress](https://www.aliexpress.com/item/1005008139076466.html) |
 | 15 | TOWOT 63/37 Rosin Core Solder Wire 1.0mm 50g | $14.69 | [Amazon](https://www.amazon.ca/TOWOT-Purity-Electrical-Soldering-Content/dp/B09KM2LW4G) |
 | 16 | Eujgoov Smoke Stopper Fuse | $14.1 | [Amazon](https://www.amazon.ca/dp/B0C8TYSR72/ref=sspa_dk_detail_0?) |
+| 17 | Soft Silicone Cable Red Black Car Battery Automotive Wiring 22AWG-26AWG | $6.98 | [AliExpress](https://www.aliexpress.com/item/1005008409314314.html?) |
 
 **Import Fees: ~$20**
 
-**Total: $607.70**
+**Total: $614.68**
 
