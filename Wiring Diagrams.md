@@ -35,30 +35,36 @@ Here is the updated controller wiring chart with both KY-023 joysticks powered b
 
 # Heltec ESP32 LoRa V3 Remote Controller Wiring Reference
 
-| Component | Component Pin / Wire | LoRa Board Pin / Header | Function / Notes |
-| :--- | :--- | :--- | :--- |
-| LiPo Battery (3.7V) | Red (+) Wire | JST 1.25mm Connector (Bottom) | Main power supply via onboard connector |
-| LiPo Battery (3.7V) | Black (-) Wire | JST 1.25mm Connector (Bottom) | Ground reference via onboard connector |
-| Left Joystick (KY-023) | +5V / VCC | 5V Pin (Bottom Row) | Powered by 5V rail |
-| Left Joystick (KY-023) | GND | GND Port (Shared splice) | Shared ground reference |
-| Left Joystick (KY-023) | VRX (X-axis) | GPIO 3 (Top Row) | Analog X-axis signal |
-| Left Joystick (KY-023) | VRY (Y-axis) | GPIO 4 (Top Row) | Analog Y-axis signal |
-| Left Joystick (KY-023) | SW (Switch) | GPIO 5 (Top Row) | Joystick click button input |
-| Right Joystick (KY-023) | +5V / VCC | 5V Pin (Bottom Row) | Powered by 5V rail |
-| Right Joystick (KY-023) | GND | GND Port (Shared splice) | Shared ground reference |
-| Right Joystick (KY-023) | VRX (X-axis) | GPIO 6 (Top Row) | Analog X-axis signal |
-| Right Joystick (KY-023) | VRY (Y-axis) | GPIO 7 (Top Row) | Analog Y-axis signal |
-| Right Joystick (KY-023) | SW (Switch) | GPIO 1 (Top Row) | Joystick click button input |
-| Left Push Button | Pin 1 | GPIO 2 (Top Row) | Digital input for custom action button |
-| Left Push Button | Pin 2 | GND (Shared ground splice) | Pulls pin LOW when pressed |
-| Right Push Button | Pin 1 | GPIO 38 (Top Row) | Digital input for custom action button |
-| Right Push Button | Pin 2 | GND (Shared ground splice) | Pulls pin LOW when pressed |
-| NRF24L01+ Module | VCC | 3V3 Pin (Top Row, with 10µF capacitor across VCC/GND) | 3.3V Power input |
-| NRF24L01+ Module | GND | GND Port (Shared splice) | Ground reference |
-| NRF24L01+ Module | CE | GPIO 47 (Bottom Row) | Chip Enable control pin |
-| NRF24L01+ Module | CSN | GPIO 48 (Bottom Row) | Chip Select Not (SPI CS) |
-| NRF24L01+ Module | SCK | GPIO 9 (SPI Clock) | SPI Serial Clock |
-| NRF24L01+ Module | MOSI | GPIO 10 (SPI MOSI) | SPI Master Out Slave In |
-| NRF24L01+ Module | MISO | GPIO 11 (SPI MISO) | SPI Master In Slave Out |
+# Remote Controller — Final Wiring Chart
+
+| Component | Component Pin | Board Pin / GPIO | Notes |
+|---|---|---|---|
+| USB Type-C | — | Type-C port | Power source |
+| Left Joystick (KY-023) | VCC | 5V (Bottom Row) | USB-powered only |
+| Left Joystick (KY-023) | GND | GND (shared) | |
+| Left Joystick (KY-023) | VRX | GPIO 3 | Analog X |
+| Left Joystick (KY-023) | VRY | GPIO 4 | Analog Y |
+| Left Joystick (KY-023) | SW | GPIO 5 | Click button |
+| Right Joystick (KY-023) | VCC | 5V (Bottom Row, shared) | USB-powered only |
+| Right Joystick (KY-023) | GND | GND (shared) | |
+| Right Joystick (KY-023) | VRX | GPIO 6 | Analog X |
+| Right Joystick (KY-023) | VRY | GPIO 7 | Analog Y |
+| Right Joystick (KY-023) | SW | GPIO 1 | Click button |
+| Left Push Button | Pin 1 | GPIO 2 | Arm/disarm |
+| Left Push Button | Pin 2 | GND (shared) | |
+| Right Push Button | Pin 1 | GPIO 38 | RTH trigger |
+| Right Push Button | Pin 2 | GND (shared) | |
+| NRF24L01+PA+LNA | VCC | 3V3 | See capacitor note below |
+| NRF24L01+PA+LNA | GND | GND (shared) | |
+| NRF24L01+PA+LNA | CE | GPIO 47 | |
+| NRF24L01+PA+LNA | CSN | GPIO 48 | SPI chip select |
+| NRF24L01+PA+LNA | SCK | GPIO 33 | SPI clock |
+| NRF24L01+PA+LNA | MOSI | GPIO 35 | SPI data in |
+| NRF24L01+PA+LNA | MISO | GPIO 34 | SPI data out |
+| NRF24L01+PA+LNA | IRQ | Not connected | Unused, code polls instead |
+| Decoupling Capacitor (10µF electrolytic) | + (long leg) | NRF24 VCC pin | Solder as close to NRF24 module as possible |
+| Decoupling Capacitor (10µF electrolytic) | − (short leg / stripe side) | NRF24 GND pin | Solder as close to NRF24 module as possible |
+
+**Capacitor note**: solder it directly across the NRF24's own VCC/GND pins, right at the module — not back near the ESP32. If electrolytic, long leg/unmarked side = +VCC, striped side = −GND.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
