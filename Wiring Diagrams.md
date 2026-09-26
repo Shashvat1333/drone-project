@@ -7,21 +7,33 @@ DRONE
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+# Drone-Side Wiring Chart (Final)
+
 | Component | Component Wire / Pin | Flight Controller / ESC Pad | Function / Notes |
 |---|---|---|---|
-| XING-E Pro 2207 Motors (x4) | 3 Motor Power Wires (per motor) | ESC Motor Pads (corners of 4-in-1 ESC) | Solder the three wires from each motor directly to the ESC pads |
+| XING-E Pro 2207 Motors (x4) | 3 Motor Power Wires (per motor) | ESC Motor Pads (corners of 4-in-1 ESC) | Solder any order — wire order doesn't matter, fix spin direction in INAV Motors tab if needed |
 | SpeedyBee 4-in-1 ESC | ESC Ribbon Cable | SpeedyBee FC Ribbon Cable Port | Plugs directly into the flight controller to bridge power and data |
 | Flywoo Molicell 6S Battery | XT60 Main Power Lead | ESC XT60 Power Pads | Main power supply for the entire stack |
-| BN-880 GPS & Compass | TX | RX4 (Flight Controller) | GPS data transmit to FC receive |
-| BN-880 GPS & Compass | RX | TX4 (Flight Controller) | GPS data receive to FC transmit |
-| BN-880 GPS & Compass | SDA | SDA (Flight Controller) | Compass I2C data line |
-| BN-880 GPS & Compass | SCL | SCL (Flight Controller) | Compass I2C clock line |
-| BN-880 GPS & Compass | 5V / VCC | 4.5V or 5V (Flight Controller) | Power input for GPS |
-| BN-880 GPS & Compass | GND | GND (Flight Controller) | Ground reference |
-| DIYmalls LoRa ESP32 Board | TX | RX2 (Flight Controller) | Telemetry data transmit to FC receive |
-| DIYmalls LoRa ESP32 Board | RX | TX2 (Flight Controller) | Telemetry data receive to FC transmit |
-| DIYmalls LoRa ESP32 Board | 5V (or VIN) | 5V (Flight Controller) | Power input |
-| DIYmalls LoRa ESP32 Board | GND | GND (Flight Controller) | Ground reference |
+| BN-880 GPS & Compass | **T** (TX) | **R3** (Flight Controller) | GPS data transmit to FC receive — UART3 |
+| BN-880 GPS & Compass | **R** (RX) | **T3** (Flight Controller) | GPS data receive to FC transmit |
+| BN-880 GPS & Compass | **D** (SDA) | SDA (Flight Controller) | Compass I2C data line |
+| BN-880 GPS & Compass | **C** (SCL) | SCL (Flight Controller) | Compass I2C clock line |
+| BN-880 GPS & Compass | **V** (VCC) | 4.5V or 5V (Flight Controller) | Power input for GPS |
+| BN-880 GPS & Compass | **G** (GND) | GND (Flight Controller) | Ground reference |
+| DIYmalls LoRa ESP32 Board | TX | **R2** (Flight Controller) | MSP data transmit to FC receive |
+| DIYmalls LoRa ESP32 Board | RX | **T2** (Flight Controller) | Optional — telemetry back from FC (not required for MSP_SET_RAW_RC) |
+| DIYmalls LoRa ESP32 Board | 5V (or VIN) | 5V (Flight Controller) | Power input — confirmed via multimeter, 3.3V rail reads correctly |
+| DIYmalls LoRa ESP32 Board | GND | GND (Flight Controller) | Ground reference — must be common with FC |
+| NRF24L01+PA+LNA | VCC | 3V3 (DIYmalls ESP32 board) | See capacitor note below |
+| NRF24L01+PA+LNA | GND | GND (DIYmalls ESP32 board, shared) | |
+| NRF24L01+PA+LNA | CE | GPIO 47 (DIYmalls ESP32 board) | |
+| NRF24L01+PA+LNA | CSN | GPIO 48 (DIYmalls ESP32 board) | SPI chip select |
+| NRF24L01+PA+LNA | SCK | GPIO 33 (DIYmalls ESP32 board) | SPI clock |
+| NRF24L01+PA+LNA | MOSI | GPIO 35 (DIYmalls ESP32 board) | SPI data in |
+| NRF24L01+PA+LNA | MISO | GPIO 34 (DIYmalls ESP32 board) | SPI data out |
+| NRF24L01+PA+LNA | IRQ | Not connected | Unused, code polls instead |
+| Decoupling Capacitor (10µF) | + | NRF24 VCC pin | Solder directly at the NRF24 module, as close as possible |
+| Decoupling Capacitor (10µF) | − | NRF24 GND pin | Solder directly at the NRF24 module, as close as possible |
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 CONTROLLER
